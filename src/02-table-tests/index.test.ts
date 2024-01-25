@@ -1,4 +1,4 @@
-import { simpleCalculator, Action } from './index';
+import { Action, simpleCalculator } from './index';
 
 const testCases = [
   { a: 1, b: 2, action: Action.Add, expected: 3 },
