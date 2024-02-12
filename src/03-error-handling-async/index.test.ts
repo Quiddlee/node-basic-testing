@@ -1,16 +1,15 @@
-// Uncomment the code below and write your tests
 import {
   throwError,
   throwCustomError,
   resolveValue,
-  // MyAwesomeError,
+  MyAwesomeError,
   rejectCustomError,
 } from './index';
 
 const RESOLVE_VAL = 'test';
 const ERR_MESSAGE = 'Error test message';
 const DEFAULT_ERROR_MESSAGE = 'Oops!';
-const CUSTOM_ERROR_MESSAGE = 'This is my awesome custom error!';
+const CUSTOM_ERROR_MESSAGE = new MyAwesomeError().message;
 
 describe('resolveValue', () => {
   test('should resolve provided value', async () => {
